@@ -1,0 +1,104 @@
+[gd_scene load_steps=11 format=3 uid="uid://dqptw4p2nohmo"]
+
+[ext_resource type="Script" path="res://level.gd" id="1_48y3o"]
+[ext_resource type="Texture2D" uid="uid://rlwropyeght0" path="res://Assets/Packs/Gothicvania Cemetery/Environment/background.png" id="2_nx2dx"]
+[ext_resource type="Texture2D" uid="uid://3p1x463i4e6e" path="res://Assets/Packs/Gothicvania Cemetery/Environment/graveyard.png" id="3_5v6m5"]
+[ext_resource type="Texture2D" uid="uid://m1o8a7hr4q15" path="res://Assets/Packs/Gothicvania Cemetery/Environment/mountains.png" id="3_52hfy"]
+[ext_resource type="AudioStream" uid="uid://d3dai52nfsivt" path="res://Rock Beat.mp3" id="6_1cei4"]
+[ext_resource type="PackedScene" uid="uid://bpw6kxpx6dd0w" path="res://Player.tscn" id="8_kl05y"]
+[ext_resource type="PackedScene" uid="uid://dyrx5r6102imo" path="res://LevelDesign1.tscn" id="9_i6dsb"]
+
+[sub_resource type="Animation" id="Animation_oef7m"]
+resource_name = "fadeIn"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_cb8eq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8so4i"]
+_data = {
+"RESET": SubResource("Animation_cb8eq"),
+"fadeIn": SubResource("Animation_oef7m")
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_48y3o")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Back" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Back"]
+position = Vector2(-1.52588e-05, -40)
+scale = Vector2(1.17602, 1.17602)
+texture = ExtResource("2_nx2dx")
+centered = false
+
+[node name="Mountains" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(384, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Mountains"]
+position = Vector2(0, 24)
+scale = Vector2(2, 2.13407)
+texture = ExtResource("3_52hfy")
+centered = false
+
+[node name="GraveYard" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.4, 0.4)
+motion_mirroring = Vector2(384, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/GraveYard"]
+position = Vector2(0, 104)
+scale = Vector2(1.19512, 1.19512)
+texture = ExtResource("3_5v6m5")
+centered = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_1cei4")
+volume_db = -3.748
+
+[node name="Node2D" parent="." instance=ExtResource("9_i6dsb")]
+position = Vector2(0, 184)
+
+[node name="Node2D2" parent="." instance=ExtResource("8_kl05y")]
+position = Vector2(32, 144)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer"]
+libraries = {
+"": SubResource("AnimationLibrary_8so4i")
+}

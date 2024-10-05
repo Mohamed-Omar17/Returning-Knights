@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://3i8mw14qay36"
+path="res://.godot/imported/mixkit-video-game-blood-pop-2361.wav-e92a937c7fa7230a5e0c40b4d88914a7.sample"
+
+[deps]
+
+source_file="res://Sound Effects/mixkit-video-game-blood-pop-2361.wav"
+dest_files=["res://.godot/imported/mixkit-video-game-blood-pop-2361.wav-e92a937c7fa7230a5e0c40b4d88914a7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

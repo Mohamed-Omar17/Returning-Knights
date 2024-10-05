@@ -1,0 +1,177 @@
+[gd_scene load_steps=33 format=3 uid="uid://bpw6kxpx6dd0w"]
+
+[ext_resource type="Texture2D" uid="uid://36i2d5d3sa4r" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run1.png" id="2_ge134"]
+[ext_resource type="Texture2D" uid="uid://b4al5jvt72pr4" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/attack/frame1.png" id="2_smkuv"]
+[ext_resource type="Script" path="res://move.gd" id="2_ttvnj"]
+[ext_resource type="Texture2D" uid="uid://bttqlaij1rab" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/attack/frame2.png" id="3_p7egl"]
+[ext_resource type="Texture2D" uid="uid://c58k32ybok6mu" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run2.png" id="3_ycpby"]
+[ext_resource type="Texture2D" uid="uid://h1k16duxuqxt" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run3.png" id="4_1mqie"]
+[ext_resource type="Texture2D" uid="uid://c1xsdb4twogyk" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/attack/frame3.png" id="4_e8aia"]
+[ext_resource type="Texture2D" uid="uid://cov4xw32tp3bl" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run4.png" id="5_bot5e"]
+[ext_resource type="Texture2D" uid="uid://buckis2cmeim4" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/attack/frame4.png" id="5_ywyfe"]
+[ext_resource type="Texture2D" uid="uid://5y6i1i107ura" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run5.png" id="6_8oi12"]
+[ext_resource type="Texture2D" uid="uid://cmx456he5d0s1" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/attack/frame5.png" id="6_nu1qx"]
+[ext_resource type="Texture2D" uid="uid://cgmfxlmjdhgdy" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Jump/jump1.png" id="6_o70e5"]
+[ext_resource type="Texture2D" uid="uid://b057qxsvk40lc" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/attack/frame6.png" id="7_0y6pf"]
+[ext_resource type="Texture2D" uid="uid://2jmlidexlp5u" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run6.png" id="7_jlkmc"]
+[ext_resource type="Texture2D" uid="uid://b3iyu0ub04bt4" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Jump/jump2.png" id="7_q5bsd"]
+[ext_resource type="Texture2D" uid="uid://c6fsk2l84qggi" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Jump/jump3.png" id="8_ljmv4"]
+[ext_resource type="Texture2D" uid="uid://bc8oh24g48v0r" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run7.png" id="8_yuoub"]
+[ext_resource type="Texture2D" uid="uid://yanu5celj2uc" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Jump/jump4.png" id="9_x54v7"]
+[ext_resource type="Texture2D" uid="uid://cvupbrgujo30t" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run8.png" id="9_ymm2n"]
+[ext_resource type="Texture2D" uid="uid://ddrrb34hwhmfk" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Jump/jump5.png" id="10_fs4gb"]
+[ext_resource type="Texture2D" uid="uid://davxaalumg5rm" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run9.png" id="10_iikye"]
+[ext_resource type="Texture2D" uid="uid://rkyc0ug3o7i6" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run10.png" id="11_prcsn"]
+[ext_resource type="Texture2D" uid="uid://c8yxlus75pwdi" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run11.png" id="12_t5ceh"]
+[ext_resource type="Texture2D" uid="uid://b2tf4j62wxeto" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run12.png" id="13_1w21k"]
+[ext_resource type="Texture2D" uid="uid://b84bg5wi7hns3" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Idle/frame1.png" id="14_ytpwc"]
+[ext_resource type="Texture2D" uid="uid://uslvnwplhx4p" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Idle/frame2.png" id="15_vlswl"]
+[ext_resource type="Texture2D" uid="uid://dkm1y1ku57ox8" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Idle/frame3.png" id="16_4wt86"]
+[ext_resource type="Texture2D" uid="uid://cmm4nf3elgbem" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Idle/frame4.png" id="17_smwmv"]
+[ext_resource type="Script" path="res://inAttackArea.gd" id="29_e7scf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jsct2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_smkuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_p7egl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_e8aia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ywyfe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_nu1qx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_0y6pf")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_ytpwc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_vlswl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_4wt86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_smwmv")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_o70e5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_q5bsd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ljmv4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_x54v7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_fs4gb")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ge134")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ycpby")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1mqie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_bot5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8oi12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jlkmc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_yuoub")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ymm2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_iikye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_prcsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_t5ceh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_1w21k")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 12.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_s6qgb"]
+radius = 9.35711
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r62yb"]
+size = Vector2(15, 12)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+light_mask = 2
+collision_mask = 2
+script = ExtResource("2_ttvnj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+position = Vector2(0, -10.6667)
+scale = Vector2(0.569444, 0.569444)
+sprite_frames = SubResource("SpriteFrames_jsct2")
+animation = &"attack"
+frame = 5
+frame_progress = 1.0
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+offset = Vector2(0, -40)
+limit_left = 0
+limit_bottom = 275
+
+[node name="PlayerCollision" type="CollisionShape2D" parent="CharacterBody2D"]
+light_mask = 2
+position = Vector2(0, 6)
+shape = SubResource("CircleShape2D_s6qgb")
+
+[node name="AttackCollision" type="Area2D" parent="CharacterBody2D" groups=["player"]]
+position = Vector2(0, 4.66667)
+script = ExtResource("29_e7scf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/AttackCollision"]
+position = Vector2(16, 1.33333)
+shape = SubResource("RectangleShape2D_r62yb")
+
+[connection signal="body_entered" from="CharacterBody2D/AttackCollision" to="CharacterBody2D/AttackCollision" method="_on_body_entered"]
+[connection signal="body_exited" from="CharacterBody2D/AttackCollision" to="CharacterBody2D/AttackCollision" method="_on_body_exited"]

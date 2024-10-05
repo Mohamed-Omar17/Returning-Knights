@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bfb68cvkfe3lk"
+path="res://.godot/imported/Miami Game Beat (Test).mp3-8b6315e7f25a5d618b89bbdf9c1edf01.mp3str"
+
+[deps]
+
+source_file="res://Miami Game Beat (Test).mp3"
+dest_files=["res://.godot/imported/Miami Game Beat (Test).mp3-8b6315e7f25a5d618b89bbdf9c1edf01.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,283 @@
+[gd_scene load_steps=44 format=3 uid="uid://bpw6kxpx6dd0w"]
+
+[ext_resource type="Texture2D" uid="uid://36i2d5d3sa4r" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run1.png" id="2_ge134"]
+[ext_resource type="Texture2D" uid="uid://b4al5jvt72pr4" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/attack/frame1.png" id="2_smkuv"]
+[ext_resource type="Script" path="res://move.gd" id="2_ttvnj"]
+[ext_resource type="Texture2D" uid="uid://bttqlaij1rab" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/attack/frame2.png" id="3_p7egl"]
+[ext_resource type="Texture2D" uid="uid://c58k32ybok6mu" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run2.png" id="3_ycpby"]
+[ext_resource type="Texture2D" uid="uid://h1k16duxuqxt" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run3.png" id="4_1mqie"]
+[ext_resource type="Texture2D" uid="uid://c1xsdb4twogyk" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/attack/frame3.png" id="4_e8aia"]
+[ext_resource type="Texture2D" uid="uid://cov4xw32tp3bl" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run4.png" id="5_bot5e"]
+[ext_resource type="Texture2D" uid="uid://buckis2cmeim4" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/attack/frame4.png" id="5_ywyfe"]
+[ext_resource type="Texture2D" uid="uid://5y6i1i107ura" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run5.png" id="6_8oi12"]
+[ext_resource type="Texture2D" uid="uid://cmx456he5d0s1" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/attack/frame5.png" id="6_nu1qx"]
+[ext_resource type="Texture2D" uid="uid://b057qxsvk40lc" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/attack/frame6.png" id="7_0y6pf"]
+[ext_resource type="Texture2D" uid="uid://2jmlidexlp5u" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run6.png" id="7_jlkmc"]
+[ext_resource type="Texture2D" uid="uid://b3iyu0ub04bt4" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Jump/jump2.png" id="7_q5bsd"]
+[ext_resource type="Texture2D" uid="uid://c6fsk2l84qggi" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Jump/jump3.png" id="8_ljmv4"]
+[ext_resource type="Texture2D" uid="uid://b6hk5ej71iivo" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Spritesheets/gothic-hero-jump.png" id="8_w3prk"]
+[ext_resource type="Texture2D" uid="uid://bc8oh24g48v0r" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run7.png" id="8_yuoub"]
+[ext_resource type="Texture2D" uid="uid://bt5o58tqeefiy" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Spritesheets/gothic-hero-hurt.png" id="9_f65ep"]
+[ext_resource type="Texture2D" uid="uid://yanu5celj2uc" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Jump/jump4.png" id="9_x54v7"]
+[ext_resource type="Texture2D" uid="uid://cvupbrgujo30t" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run8.png" id="9_ymm2n"]
+[ext_resource type="Texture2D" uid="uid://davxaalumg5rm" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run9.png" id="10_iikye"]
+[ext_resource type="Texture2D" uid="uid://rkyc0ug3o7i6" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run10.png" id="11_prcsn"]
+[ext_resource type="Texture2D" uid="uid://c8yxlus75pwdi" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run11.png" id="12_t5ceh"]
+[ext_resource type="Texture2D" uid="uid://b2tf4j62wxeto" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Run/run12.png" id="13_1w21k"]
+[ext_resource type="Texture2D" uid="uid://b84bg5wi7hns3" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Idle/frame1.png" id="14_ytpwc"]
+[ext_resource type="Texture2D" uid="uid://uslvnwplhx4p" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Idle/frame2.png" id="15_vlswl"]
+[ext_resource type="Texture2D" uid="uid://dkm1y1ku57ox8" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Idle/frame3.png" id="16_4wt86"]
+[ext_resource type="Texture2D" uid="uid://cmm4nf3elgbem" path="res://Assets/Characters/Gothic Hero/Gothic-hero-Files/Sprites/Idle/frame4.png" id="17_smwmv"]
+[ext_resource type="Script" path="res://playerGotHit.gd" id="28_rmlsn"]
+[ext_resource type="Script" path="res://attack_left.gd" id="29_734bd"]
+[ext_resource type="Script" path="res://attack_right.gd" id="29_t66xe"]
+[ext_resource type="PackedScene" uid="uid://k040w6m0p5o" path="res://HealthBar.tscn" id="33_s71yf"]
+[ext_resource type="AudioStream" uid="uid://ldg7fbg671kp" path="res://Sound Effects/8-bit-jump-edited.mp3" id="34_eibu8"]
+[ext_resource type="AudioStream" uid="uid://dvrax6k8vcwdl" path="res://Sound Effects/sword-swing-whoosh-sound-effect-2-full-pack-on-gamesfxpackscom-241823.mp3" id="35_o5pib"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vs5bv"]
+atlas = ExtResource("8_w3prk")
+region = Rect2(384, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n6fuj"]
+atlas = ExtResource("8_w3prk")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_70q1w"]
+atlas = ExtResource("9_f65ep")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pwcnv"]
+atlas = ExtResource("8_w3prk")
+region = Rect2(384, 0, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jsct2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_smkuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_p7egl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_e8aia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ywyfe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_nu1qx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_0y6pf")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vs5bv")
+}],
+"loop": false,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n6fuj")
+}],
+"loop": true,
+"name": &"glide",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_70q1w")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_ytpwc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_vlswl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_4wt86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_smwmv")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_q5bsd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ljmv4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_x54v7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pwcnv")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ge134")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ycpby")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1mqie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_bot5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8oi12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jlkmc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_yuoub")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ymm2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_iikye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_prcsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_t5ceh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_1w21k")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 12.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f07nt"]
+radius = 7.5
+height = 20.0
+
+[sub_resource type="GDScript" id="GDScript_4lp81"]
+script/source = "extends Area2D
+
+\"\"\"func _on_area_entered(area: Node2D) -> void:
+	if area.is_in_group(\"enemies\"): #&& (Input.is_action_pressed(\"ui_left\") || Input.is_action_just_released(\"ui_left\")):
+		print(\"GotHit\")
+		Global.playerCanBeHit = true;
+		Global.playerHealth -= 1;
+
+
+func _on_area_exited(area: Area2D) -> void:
+	if area.is_in_group(\"enemies\"): #&& (Input.is_action_pressed(\"ui_left\") || Input.is_action_just_released(\"ui_left\")):
+		print(\"CantBeHit\")
+		Global.playerCanBeHit = false;\"\"\"
+"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x4v23"]
+radius = 7.0
+height = 20.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r62yb"]
+size = Vector2(18, 12)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+collision_mask = 2
+floor_constant_speed = true
+floor_snap_length = 2.0
+script = ExtResource("2_ttvnj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+position = Vector2(1, -11)
+scale = Vector2(0.569444, 0.569444)
+sprite_frames = SubResource("SpriteFrames_jsct2")
+animation = &"hit"
+
+[node name="PlayerCollision" type="CollisionShape2D" parent="CharacterBody2D" groups=["playerCollision"]]
+light_mask = 2
+position = Vector2(1, 6)
+shape = SubResource("CapsuleShape2D_f07nt")
+script = ExtResource("28_rmlsn")
+
+[node name="takeDamage" type="Area2D" parent="CharacterBody2D" groups=["player", "playerCollision"]]
+position = Vector2(-31, 4)
+script = SubResource("GDScript_4lp81")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/takeDamage"]
+position = Vector2(32, 2)
+shape = SubResource("CapsuleShape2D_x4v23")
+
+[node name="AttackLeft" type="Area2D" parent="CharacterBody2D" groups=["hitFromLeft", "player"]]
+position = Vector2(-31, 4)
+script = ExtResource("29_734bd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/AttackLeft" groups=["hitFromLeft", "player"]]
+position = Vector2(15, 1)
+shape = SubResource("RectangleShape2D_r62yb")
+
+[node name="AttackRight" type="Area2D" parent="CharacterBody2D" groups=["hitFromRight", "player"]]
+position = Vector2(1, 3)
+script = ExtResource("29_t66xe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/AttackRight" groups=["hitFromRight", "player"]]
+position = Vector2(17, 2)
+shape = SubResource("RectangleShape2D_r62yb")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+offset = Vector2(0, -30)
+limit_left = 0
+limit_bottom = 300
+
+[node name="Control" parent="CharacterBody2D/Camera2D" instance=ExtResource("33_s71yf")]
+offset_left = 32.0
+offset_top = -133.0
+offset_right = 32.0
+offset_bottom = -133.0
+
+[node name="CoyoteJumpTimer" type="Timer" parent="CharacterBody2D"]
+wait_time = 7.467
+
+[node name="JumpSound" type="AudioStreamPlayer" parent="CharacterBody2D"]
+stream = ExtResource("34_eibu8")
+volume_db = -15.0
+
+[node name="SwordSwing" type="AudioStreamPlayer" parent="CharacterBody2D"]
+stream = ExtResource("35_o5pib")
+volume_db = -4.53
+
+[connection signal="area_entered" from="CharacterBody2D/takeDamage" to="CharacterBody2D/takeDamage" method="_on_area_entered"]
+[connection signal="area_exited" from="CharacterBody2D/takeDamage" to="CharacterBody2D/takeDamage" method="_on_area_exited"]
+[connection signal="body_entered" from="CharacterBody2D/takeDamage" to="CharacterBody2D" method="_on_attack_left_body_entered"]
+[connection signal="body_exited" from="CharacterBody2D/takeDamage" to="CharacterBody2D/takeDamage" method="_on_body_exited"]
+[connection signal="area_entered" from="CharacterBody2D/AttackLeft" to="CharacterBody2D/AttackLeft" method="_on_area_entered"]
+[connection signal="area_exited" from="CharacterBody2D/AttackLeft" to="CharacterBody2D/AttackLeft" method="_on_area_exited"]
+[connection signal="body_entered" from="CharacterBody2D/AttackLeft" to="CharacterBody2D" method="_on_attack_left_body_entered"]
+[connection signal="body_exited" from="CharacterBody2D/AttackLeft" to="CharacterBody2D/AttackLeft" method="_on_body_exited"]
+[connection signal="area_entered" from="CharacterBody2D/AttackRight" to="CharacterBody2D/AttackRight" method="_on_area_entered"]
+[connection signal="area_exited" from="CharacterBody2D/AttackRight" to="CharacterBody2D/AttackRight" method="_on_area_exited"]
+[connection signal="body_entered" from="CharacterBody2D/AttackRight" to="CharacterBody2D" method="_on_attack_left_body_entered"]
+[connection signal="body_exited" from="CharacterBody2D/AttackRight" to="CharacterBody2D/AttackRight" method="_on_body_exited"]

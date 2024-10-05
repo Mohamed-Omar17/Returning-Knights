@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dqptw4p2nohmo"]
+
+[ext_resource type="Shader" path="res://Level.gdshader" id="1_dapsi"]
+[ext_resource type="Texture2D" uid="uid://bfrtdcochq6xl" path="res://Assets/Environments/mist-forest-background/layers/mist-forest-background-back.png" id="1_egjqc"]
+[ext_resource type="Script" path="res://ScrollingBG.gd" id="3_680vm"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8busm"]
+shader = ExtResource("1_dapsi")
+shader_parameter/scroll_speed = 0.2
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_8busm")
+offset_left = -192.0
+offset_top = -112.0
+offset_right = 192.0
+offset_bottom = 112.0
+texture = ExtResource("1_egjqc")
+expand_mode = 5
+stretch_mode = 1
+script = ExtResource("3_680vm")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
